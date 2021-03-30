@@ -204,6 +204,9 @@ ro.vendor.sensors.pmd=true
 ro.vendor.sensors.sta_detect=true
 ro.vendor.sensors.mot_detect=true
 
+# Skia
+renderthread.skia.reduceopstasksplitting=true
+
 # Set system properties identifying the chipset
 ro.soc.manufacturer=QTI
 ro.soc.model=SDM660
