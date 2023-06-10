@@ -8,22 +8,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# API level, the device has been commercially launched on
+PRODUCT_SHIPPING_API_LEVEL := 28
 
 # Inherit from lavender device
-$(call inherit-product, $(LOCAL_PATH)/device.mk)
+$(call inherit-product, device/xiaomi/lavender/device.mk)
 
-PRODUCT_BRAND := Xiaomi
-PRODUCT_DEVICE := lavender
-PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := aosp_lavender
-PRODUCT_MODEL := Redmi Note 7
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Inherit some common Proton stuff
+$(call inherit-product, vendor/proton/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_USES_AOSP_RECOVERY := true
-TARGET_GAPPS_ARCH := arm64
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 2340
+TARGET_SCREEN_WIDTH := 1080
+
+PRODUCT_NAME := lavender
+PRODUCT_DEVICE := lavender
+PRODUCT_BRAND := Redmi
+PRODUCT_MODEL := Redmi Note 7
+PRODUCT_MANUFACTURER := Xiaomi
+
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
