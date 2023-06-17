@@ -10,8 +10,8 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@5.0-impl:32 \
-    android.hardware.audio.effect@5.0-impl:32 \
+    android.hardware.audio@5.0-impl \
+    android.hardware.audio.effect@5.0-impl \
     android.hardware.audio.service \
     audio.primary.sdm660 \
     audio.r_submix.default \
@@ -55,12 +55,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.camera.device@3.5:64 \
-    android.hardware.camera.provider@2.6:64 \
-    android.hardware.camera.provider@2.4-impl:32 \
+    android.hardware.camera.device@3.5 \
+    android.hardware.camera.provider@2.6 \
+    android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libdng_sdk.vendor \
-    vendor.qti.hardware.camera.device@1.0:64
+    vendor.qti.hardware.camera.device@1.0
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -386,7 +386,7 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0 \
-    android.hardware.sensors@1.0-impl:64 \
+    android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
 # Shims
