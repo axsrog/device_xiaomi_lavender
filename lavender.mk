@@ -18,6 +18,7 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 $(call inherit-product, vendor/proton/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
+PROTON_BUILD_VARIANT := OFFICIAL
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2340
