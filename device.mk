@@ -277,9 +277,6 @@ PRODUCT_PACKAGES_PACKAGES += \
     TelephonyLavender \
     WifiLavender
 
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp
-
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
