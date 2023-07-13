@@ -53,18 +53,18 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0.vendor \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
+# Camera
+PRODUCT_PACKAGES += \
+    libstdc++.vendor \
+    libdng_sdk.vendor
+
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
     android.hardware.camera.device@3.5:64 \
     android.hardware.camera.provider@2.6:64 \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
-    libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64
-
-# Camera
-PRODUCT_PACKAGES += \
-    libstdc++.vendor
 
 # Cgroup and task_profiles
 PRODUCT_COPY_FILES += \
@@ -388,7 +388,7 @@ PRODUCT_PACKAGES += \
 
 # Shims
 PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
+    libcamera_lavender_shim
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
