@@ -269,6 +269,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_PACKAGES += \
     CarrierConfigLavender \
     FrameworksLavender \
+    MaintainerLavender \
     NoCutoutLavender \
     NotchKillerLavender \
     SettingsProviderLavender \
